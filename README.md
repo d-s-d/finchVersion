@@ -1,5 +1,5 @@
 # finchVersion
-A sample Project demonstrating API-Versioning based on Finch.
+A sample project demonstrating API-Versioning based on Finch.
 
 ## Starting the API
 To start the API, checkout the source code and run:
