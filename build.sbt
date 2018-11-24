@@ -3,7 +3,12 @@ version := "0.1"
 scalaVersion := "2.12.7"
 
 val circeVersion = "0.10.+"
-val finchVersion = "0.24.+"
+val finchVersion = "0.26.+"
+val twitterVersion = "18.11.+"
+
+libraryDependencies ++= Seq(
+  "com.twitter" %% "twitter-server" % twitterVersion
+)
 
 libraryDependencies ++= Seq(
   "io.circe" %% "circe-core",
