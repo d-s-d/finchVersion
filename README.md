@@ -4,7 +4,7 @@ A sample project demonstrating API-Versioning based on Finch.
 ## Starting the API
 To start the API, checkout the source code and run:
 
-```sbt runMain com.dsd.finchVersion.Main [-pathVersioning]```
+```sbt "runMain com.dsd.finchVersion.Main [-pathVersioning]"```
 
 If the flag `-pathVersioning` is set, the version is path-based. Otherwise, a
 client is required to properly set the Content-Type as described below.
