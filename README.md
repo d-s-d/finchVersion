@@ -47,8 +47,7 @@ http://localhost:8080/api/users/1
 > GET /api/users/1 HTTP/1.1
 > Host: localhost:8080
 > User-Agent: curl/7.54.0
-> Accept: */*
-> Content-Type: application/vnd.example.com.v1+json
+> Accept: application/vnd.example.com.v1+json
 > 
 < HTTP/1.1 200 OK
 < Date: Sat, 24 Nov 2018 17:06:25 GMT
@@ -59,4 +58,3 @@ http://localhost:8080/api/users/1
 * Connection #0 to host localhost left intact
 {"username":"albi","name":"Albert Einstein"}
 ```
-

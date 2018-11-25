@@ -12,7 +12,7 @@ object VersionEndpoint {
   def pathBased(v: String): Endpoint[HNil] = path(s"v$v")
 
   def contentType(v: String): Endpoint[HNil] = (input: Input) => {
-    input.request.headerMap.get("Content-Type") match {
+    input.request.headerMap.get("Accept") match {
       case Some(apiVersionScheme(version)) if v == version =>
         EndpointResult.Matched(input, Trace.empty, EmptyOutput)
       case _ =>
